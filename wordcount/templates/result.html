@@ -1,0 +1,12 @@
+<h1>result</h1>
+<P>당신이 입력한 텍스트는 총 {{total}} 로 이루어져 있습니다.</P>
+<a href="{%url 'home'%}">돌아가기</a>
+<br/>
+<h2>입력한 텍스트: </h2>
+{{full}}
+
+<h2>단어 카운트: </h2>
+{% for word, number in dictionary %}
+{{word}} : {{number}}
+<br/>
+{%endfor%}
